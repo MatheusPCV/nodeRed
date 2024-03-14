@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Última Informação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Últimos Valores</h1>
+        <p><strong>Sensor:</strong> {{ sensor }}</p>
+        <p><strong>Botão:</strong> {{ botao }}</p>
+        <p><strong>Robô:</strong> {{ ligarobo }}</p>
+        <p><strong>Reset:</strong> {{ reset }}</p>
+        <p><strong>Valor:</strong> {{ value }}</p>
+    </div>
+</body>
+
+</html>
